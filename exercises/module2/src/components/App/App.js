@@ -33,6 +33,11 @@ const App = () => {
         text='moins'
         value={-1}
       /> 
+      <Button
+        onClick={changeCount}
+        text='zero'
+        value={0-counter}
+      /> 
     </div>
   )
 }
