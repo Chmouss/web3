@@ -2,11 +2,14 @@ import Display from "components/Display/Display"
 import Button from "components/Button/Button"
 //import React from "react"
 
-import { useState } from "react"
+//import { useState } from "react" //a utiliser pour exo de base 
+import useLocalStorage from "hooks/useLocalStorage"
 
 const App = () => {
-  const [ counter, setCounter ] = useState(JSON.parse(localStorage.getItem("counter")) ?? 0)
+  //const [ counter, setCounter ] = useState(JSON.parse(localStorage.getItem("counter")) ?? 0) //exo de base
   // ->    ?? if premiere cond null ou undefined, il prend la valeur a droite
+
+  const [ counter, setCounter ] = useLocalStorage( "counter", 0 )
 
   //const increaseByOne = () => setCounter(counter + 1)
   //const decreaseByOne = () => setCounter(counter - 1)
