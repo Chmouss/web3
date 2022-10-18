@@ -1,6 +1,6 @@
 import pasta from 'components/Header/pasta.jpg'
 
-console.log(pasta);
+//console.log(pasta);
 
 const Header = (props) =>{
     return (
