@@ -36,7 +36,7 @@ const App = () => {
       <Button
         onClick={changeCount}
         text='zero'
-        value={0-counter}
+        value={0 - counter}
       /> 
     </div>
   )
